@@ -1,33 +1,87 @@
 body, html {
     height: 100%;
-    font: "Lato"
-  }
+}
 
-  .bg {
+.bg {
     /* The image used */
     background-image: url("img/main_page.jpg");
     opacity: 0.7;
   
-    /* Full height and width */
-    height: 100%;
-    width: 100%;
+    /* Full height */
+    height: 100%;   
   
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
+}
 
-  .bg-header{
+.bg-header{
     position: relative;
     left: 0;
     top: 50%;
     width: 100%;
     text-align: center;
-    color: rgb(25, 27, 27);
-  } 
-  .bg-header span{
-    background-color: rgb(252, 242, 227);
+    color: rgb(25, 27, 27); 
+    
+} 
+.bg-header span{  
+    background-color: rgb(252, 242, 227);       
     font-size: 50px;
-  }
+    padding: 10px;
+}
+
+.menu{
+    background-color: rgb(252, 242, 227);
+}
+.menu li{
+    font-size: 30px;
+    color: #2c1907;   
+}
+.menu .is-active > a {
+    background: #2c1907;
+    color: #faebd9;
+}
+.menu a:hover{
+    color: #faebd9;
+    background: #2c190785;
+}
+.menu a {
+    color: #2c1907;
+    padding: 0.6rem 0.7rem;
+} 
+.builder-title{
+    text-align: center;
+    margin: 0;
+    background: #2c1907;
+    color: #faebd9;
+}
+.underline-menu > .is-active a{
+    border-bottom: 0.25rem solid #fefefe;     
+}
+.accordion-item{
+    text-align: center;    
+}
+.accordion-title{
+    font-size: 25px;
+    color: #faebd9;
+    background: #2c1907;
+}
+.accordion-title::before, .accordion-title:focus{   
+    color: #faebd9;
+    background: #2c1907;
+    content: ""; }
+  .is-active > .accordion-title::before 
+  {
+    content: ""; 
+}
+.accordion-title:hover{
+    color: #2c1907;
+    background: #faebd9;
+}
+.is-active > .accordion-title{
+    color: #2c1907;
+    background: #faebd9;
+}
+
   

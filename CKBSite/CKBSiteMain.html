@@ -9,45 +9,90 @@
     <link rel="stylesheet" href="css/app.css">
   </head>
 <body>
-    
-    <!--MENU BAR-->
 
-    <div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
-        <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
-        <div class="title-bar-title">Menu</div>
-      </div>
-      
-      <div class="top-bar" id="responsive-menu">
-        <div class="top-bar-left">
-          <ul class="dropdown menu" data-dropdown-menu>
-            <li class="menu-text">Site Title</li>
-            <li class="has-submenu">
-              <a href="#0">One</a>
-              <ul class="submenu menu vertical" data-submenu>
-                <li><a href="#0">One</a></li>
-                <li><a href="#0">Two</a></li>
-                <li><a href="#0">Three</a></li>
-              </ul>
-            </li>
-            <li><a href="#0">Two</a></li>
-            <li><a href="#0">Three</a></li>
-          </ul>
-        </div>
-        <div class="top-bar-right">
-          <ul class="menu">
-            <li><input type="search" placeholder="Search"></li>
-            <li><button type="button" class="button">Search</button></li>
-          </ul>
-        </div>
-      </div>
-
-    <!--ABOUT-->
-
+    <!--MENU BAR--> 
+    <nav>
+      <ul class="menu underline-menu">   
+        <li class="menu-text">CKB</li>
+        <li class="is-active"><a href="CKBSiteMain.html" aria-selected="true">About</a></li>
+        <li ><a href="CKBSiteBuilder.html">Create</a></li>
+        <li ><a href="#panel3c">Share</a></li>                                            
+      </ul> 
+    </nav>          
+    <!--ABOUT-->        
     <div class = "bg">
         <div class = "bg-header">
             <span>CREATE YOUR OWN CUSTOM KEYBOARD</span>             
         </div>
-    </div>    
+    </div> 
+
+    <div class = "grid-y grid-frame">   
+    <div class="orbit" role="region" aria-label="About" data-orbit>
+        <div class="orbit-wrapper">
+        <div class="orbit-controls">
+            <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+            <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+        </div>        
+        <ul class="orbit-container">
+            <li class="is-active orbit-slide">
+                <div>
+                    <h3 class="text-center">Custom keyboards</h3>
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde harum rem, beatae ipsa consectetur quisquam. Rerum ratione, delectus atque tempore sed, suscipit ullam, beatae distinctio cupiditate ipsam eligendi tempora expedita.</p>
+                </div>
+            </li>
+            <li class="orbit-slide">
+                <div>
+                    <h3 class="text-center">Case</h3>
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde harum rem, beatae ipsa consectetur quisquam. Rerum ratione, delectus atque tempore sed, suscipit ullam, beatae distinctio cupiditate ipsam eligendi tempora expedita.</p>
+                </div>
+            </li>
+            <li class="orbit-slide">
+                <div>
+                    <h3 class="text-center">Printed circuit board</h3>
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde harum rem, beatae ipsa consectetur quisquam. Rerum ratione, delectus atque tempore sed, suscipit ullam, beatae distinctio cupiditate ipsam eligendi tempora expedita.</p>
+                </div>
+            </li>
+            <li class="orbit-slide">
+                <div>
+                    <h3 class="text-center">Plate</h3>
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde harum rem, beatae ipsa consectetur quisquam. Rerum ratione, delectus atque tempore sed, suscipit ullam, beatae distinctio cupiditate ipsam eligendi tempora expedita.</p>
+                </div>
+            </li>
+            <li class="orbit-slide">
+                <div>
+                    <h3 class="text-center">Switches</h3>
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde harum rem, beatae ipsa consectetur quisquam. Rerum ratione, delectus atque tempore sed, suscipit ullam, beatae distinctio cupiditate ipsam eligendi tempora expedita.</p>
+                </div>
+            </li>
+            <li class="orbit-slide">
+                <div>
+                    <h3 class="text-center">Keycaps</h3>
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde harum rem, beatae ipsa consectetur quisquam. Rerum ratione, delectus atque tempore sed, suscipit ullam, beatae distinctio cupiditate ipsam eligendi tempora expedita.</p>
+                </div>
+            </li>
+            <li class="orbit-slide">
+                <div>
+                    <h3 class="text-center">Stabilizers</h3>
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde harum rem, beatae ipsa consectetur quisquam. Rerum ratione, delectus atque tempore sed, suscipit ullam, beatae distinctio cupiditate ipsam eligendi tempora expedita.</p>
+                </div>
+            </li>
+        </ul>
+        </div>        
+        <nav class="orbit-bullets">
+        <button class="is-active" data-slide="0">
+            <span class="show-for-sr">Custom keyboards.</span>
+            <span class="show-for-sr" data-slide-active-label>Current Slide</span>
+        </button>
+        <button data-slide="1"><span class="show-for-sr">Case.</span></button>
+        <button data-slide="2"><span class="show-for-sr">Printed circuit board.</span></button>
+        <button data-slide="3"><span class="show-for-sr">Plate.</span></button>
+        <button data-slide="4"><span class="show-for-sr">Switches.</span></button>
+        <button data-slide="5"><span class="show-for-sr">Keycaps.</span></button>
+        <button data-slide="6"><span class="show-for-sr">Stabilizers.</span></button>
+        </nav>
+    </div>
+    </div>      
+
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
